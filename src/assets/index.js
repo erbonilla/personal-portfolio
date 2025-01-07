@@ -1,17 +1,17 @@
 // Importing icons for Hero section
-import InstagramLineIcon from "remixicon-react/InstagramLineIcon";
-import FacebookCircleLineIcon from "remixicon-react/FacebookCircleLineIcon";
-import DribbbleLineIcon from "remixicon-react/DribbbleLineIcon";
-import YoutubeLineIcon from "remixicon-react/YoutubeLineIcon";
+import LinkedinLineIcon from "remixicon-react/LinkedinLineIcon";
 import GithubLineIcon from "remixicon-react/GithubLineIcon";
+import FacebookCircleLineIcon from "remixicon-react/FacebookCircleLineIcon";
+import InstagramLineIcon from "remixicon-react/InstagramLineIcon";
+import DribbbleLineIcon from "remixicon-react/DribbbleLineIcon";
 
 // Exporting icons as an array for easy use in Hero component
 export const heroIcons = [
-  <InstagramLineIcon />,
-  <FacebookCircleLineIcon />,
-  <DribbbleLineIcon />,
-  <YoutubeLineIcon />,
+  <LinkedinLineIcon />,
   <GithubLineIcon />,
+  <FacebookCircleLineIcon />,
+  <InstagramLineIcon />,
+  <DribbbleLineIcon />,
 ];
 
 // Importing icons for About Me section
@@ -24,24 +24,24 @@ import AwardFillIcon from "remixicon-react/AwardFillIcon";
 export const aboutData = [
   {
     title: "Github Repos",
-    amount: 348,
+    amount: 18,
     icon: <GithubFillIcon />,
   },
   {
     title: "Successful Projects",
-    amount: 227,
+    amount: 3,
     icon: <Projector2LineIcon />,
   },
-  {
+ /* {
     title: "Team Members",
     amount: 15,
     icon: <GroupLineIcon />,
-  },
-  {
+  },*/
+  /*{
     title: "Awards Won",
     amount: 12,
     icon: <AwardFillIcon />,
-  },
+  },*/
 ];
 
 // Additional icons for other components
@@ -54,146 +54,222 @@ export const arrowLeftIcon = <ArrowLeftSFillIcon />;
 
 // About text data
 export const aboutText = `
-  Hi, I'm Nick, a web developer & designer. I blend the technical skills of web development 
-  with the creative aspects of web design. I code in HTML, CSS, JavaScript, React, NextJS... 
-  to build functional and responsive websites, while also using design tools like Photoshop 
-  and Figma to create visually appealing and user-friendly interfaces. My role allows me 
-  to ensure that websites not only work well but also look great and provide an excellent 
-  user experience.
+“Hi, I’m ED, UX/UI Designer and Front-End Developer passionate about crafting user-centered digital experiences. 
+With expertise in HTML, CSS, JavaScript, and React, I build intuitive and responsive interfaces that connect technology with users. 
+My skills in human-centered design and enterprise design thinking enable me to solve problems creatively while ensuring customer satisfaction. 
+Combining technical proficiency with a keen eye for design, I strive to deliver seamless, engaging, 
+and accessible solutions for the modern digital world.”
 `;
 
 // Experience data
 export const experienceData = [
   {
     year: 1,
-    title: "Foundation and Basics",
-    education: "High School Diploma: Focus on computer science, mathematics, and art/design courses.",
+    title: "Hewlett Packard Enterprise - Technical Server Support Engineer.",
+    education: [
+      "- HP Accredited Platform Specialist (APS) .",
+    ],
     experience: [
-      "Basic HTML/CSS: Learn through online tutorials and courses.",
-      "Personal Projects: Create simple personal websites or blogs.",
+      "Experienced in global IT support, specializing in resolving hardware and software issues, diagnosing and troubleshooting ProLiant and Blade servers across Windows, Linux, and VMware, providing expertise in server clustering and multivendor systems.",
+  
     ],
   },
   {
     year: 2,
-    title: "Advanced Learning and Early Experience",
-    education: "Associate's Degree in Web Development or Design: Enroll in a 2-year program covering web development and design principles.",
+    title: "Amazon - Supervisor Resolution Specialist, CNS Heavy Bulky, VCS ",
+    education: [
+      "- Azure Fundamentals.",
+      "- Introduction & Cybersecurity Essentials.",
+    ],
     experience: [
-      "Freelance Work: Take on small freelance projects to build a portfolio.",
-      "Online Courses and Certifications: Learn JavaScript, responsive design, and UX/UI design.",
+      "Experienced in handling associate and customer inquiries, including escalated contacts, with a strong focus on Customer Obsession and Ownership.",
+      "Demonstrating foundational expertise in cloud services, cybersecurity principles, threat detection, network security, encryption, and defensive strategies.",
+  
     ],
   },
   {
     year: 3,
-    title: "Specialized Education and Real-World Application",
-    education: "Online Courses and Bootcamps: Focus on specialized areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).",
+    title: "IBM - Technical Support Specialist",
+    education: [
+      "- IT Essentials.",
+      "- CCNA: Introduction to Networks.",
+      "- CCNA: Switching, Routing, and Wireless Essentials.",
+    ],
     experience: [
-      "Internships: Secure internships with tech companies or design agencies.",
-      "Contribute to Open Source: Collaborate on open-source projects.",
+      "Provide advanced technical support for IBM products and solutions, leveraging expertise in troubleshooting, system optimization, and customer-focused problem resolution across hardware, software, and cloud platforms.",
+      "Foundational expertise in networking concepts, IP addressing, LAN configuration, and troubleshooting, gained through extensive hands-on.",
     ],
   },
   {
     year: 4,
-    title: "Building Expertise and Expanding Skills",
-    education: "Associate's Degree in Web Development or Design: Enroll in a 2-year program covering web development and design principles.",
+    title: "Kyndryl - Senior Technical Support Specialist",
+    education: [
+      "- Junior Cybersecurity Analyst.",
+      "- CyberOps Associate.",
+      "- User Experience Design Fundamental.",
+    ],
     experience: [
-      "Full-Time Position: Work as a junior web developer or designer.",
-      "Portfolio Development: Continuously update your portfolio with professional and personal projects.",
+      "Skilled in network monitoring, threat detection, vulnerability assessment, risk management, incident response, and hands-on experience with firewalls, cryptography, and forensic investigations.",
+      "Advanced skills in network administration, virtualization, and cloud computing, gained through hands-on experience and continuous learning.",
     ],
   },
   {
     year: 5,
-    title: "Mastery and Leadership",
-    education: "Workshops and Conferences: Attend industry events to stay updated.",
-    experience: [
-      "Senior Position: Aim for a senior web developer or lead designer role, mentoring junior colleagues.",
-      "Freelance and Consulting: Consider starting a freelance business or consulting practice.",
+    title: "Google UX Design Professional Certificate.",
+    education: [
+      "- UX/UI Design Professional.",
+      "- Web Development Fundamentals.",
+      "- Adobe Creative Cloud: Photoshop, Illustrator.",
     ],
-  },
+    experience: [
+      "program focused on the entire design process, from user research and problem definition to ideation, wireframing, prototyping, and usability testing, with hands-on, practice-based assessments to develop user-centered design solutions..",
+      ,
+    ],
+},
+{
+  year: 6,
+  title: "Enterprise Design Thinking & Agile Methodologies",
+  education: [
+    "- Beginner in Programming - HTML, CSS, Javascript.",
+    "- Web Development Fundamentals.",
+    "- CISCO CCNA: Enterprise Networking.",
+  ],
+  experience: [
+    "Expertise in applying design thinking to real-world projects. Proficient in UX concepts, team collaboration, with experience analyzing case studies and redesigning digital solutions to improve user outcomes.",
+    "Knowledge of web development concepts and processes, developing, deploying, and testing websites using HTML, CSS, and JavaScript, with an understanding of the tools, programming languages, and skills essential for success.",
+  ],
+},
+{
+  year: 7,
+  title: "Front-End Developer HTML, CSS, Javascript, React",
+  education: [
+    "- Front-End UI.",
+    "- JavaScript, the language of the web.",
+    "- React, Vite Git & Github version control.",
+  ],
+  experience: [
+    "Front-End Developer training Oracle ONE Next Education Program, focusing on HTML, CSS, and JavaScript foundations to build interactive web pages, with preparation for modern frameworks like React and skills in Git and version control.",
+    "React training, gaining expertise in building projects from scratch, implementing reactive components, utilizing hooks for state management, and integrating advanced JavaScript concepts.",
+  ],
+}
 ];
+
 
 // Skills data
 export const skillsData = [
-  { name: 'Figma', icon: '/skills/figma.png' },
-  { name: 'Photoshop', icon: '/skills/photoshop.png' },
-  { name: 'Blender', icon: '/skills/blender.png' },
-  { name: 'VS Code', icon: '/skills/vscode.png' },
-  { name: 'AI', icon: '/skills/ai.png' },
-  { name: 'CSS', icon: '/skills/css.png' },
-  { name: 'Framer', icon: '/skills/framer.png' },
-  { name: 'GitHub', icon: '/skills/github.png' },
+  
+  
   { name: 'HTML', icon: '/skills/html.png' },
+  { name: 'CSS', icon: '/skills/css.png' },
+  { name: 'Tailwind', icon: '/skills/tailwind.png' },
   { name: 'JavaScript', icon: '/skills/js.png' },
-  { name: 'MongoDB', icon: '/skills/mongodb.png' },
+  { name: 'TypeScript', icon: '/skills/ts.png' },
+  { name: 'React', icon: '/skills/react.png' },
+  { name: 'Vite', icon: '/skills/vite.png' },
   { name: 'Next.js', icon: '/skills/nextjs.png' },
   { name: 'Node.js', icon: '/skills/nodejs.png' },
-  { name: 'React', icon: '/skills/react.png' },
-  { name: 'Tailwind', icon: '/skills/tailwind.png' },
-  { name: 'Three.js', icon: '/skills/threejs.png' },
-  { name: 'TypeScript', icon: '/skills/ts.png' },
-  { name: 'Vite', icon: '/skills/vite.png' },
+  { name: 'Figma', icon: '/skills/figma.png' },
+  { name: 'Illustrator', icon: '/skills/ai.png' },
+  { name: 'Photoshop', icon: '/skills/photoshop.png' },
+  { name: 'VS Code', icon: '/skills/vscode.png' },  
+  { name: 'GitHub', icon: '/skills/github.png' },
+  { name: 'Framer', icon: '/skills/framer.png' },
+  { name: 'Bootstrap', icon: '/skills/bootstrap.png' },
+  //{ name: 'Blender', icon: '/skills/blender.png' },
+  // { name: 'MongoDB', icon: '/skills/mongodb.png' },
 ];
 
 // Projects data
 export const projectsData = [
   {
-    name: 'SparkleGrove.com',
-    desc: 'A lifestyle blog featuring DIY crafts, home decor ideas, and inspiration for creating a cozy and stylish living space.',
-    url: '/projects/image-1.jpg',
-    tech: ['Figma', 'Photoshop', 'HTML'],
-  },
-  {
-    name: 'TechTrekker.net',
-    desc: 'A technology news and review site covering the latest gadgets, software updates, and trends in the tech industry.',
-    url: '/projects/image-2.jpg',
-    tech: ['Figma', 'Photoshop'],
-  },
-  {
-    name: 'CozyNestHomes.org',
-    desc: 'A resource for homeowners and renters alike, offering tips on interior design, home improvement projects, and sustainable living practices.',
-    url: '/projects/image-3.jpg',
+    name: 'Programming logic',
+    desc: 'Development environment setup and creating interactive games, while gaining access to a comprehensive developer ecosystem of tools, documentation, and support.',
+    url: '/projects/image-01.png',
     tech: ['HTML', 'CSS', 'JavaScript'],
   },
   {
-    name: 'WanderLuxeTravels.co',
-    desc: 'A travel website that provides luxury travel guides, destination reviews, and tips for planning unforgettable vacations.',
-    url: '/projects/image-4.jpg',
-    tech: ['HTML', 'CSS', 'JavaScript', 'TailwindCSS'],
+  name: 'HTML & CSS',
+    desc: 'Developed foundational skills in HTML and CSS, to create projects from scratch, apply CSS styling, and implement semantic HTML with best practices based on documentation.',
+    url: '/projects/image-02.png',
+    tech: ['Figma', 'HTML', 'CSS'],
   },
   {
-    name: 'ByteBoosters.io',
-    desc: 'A tech startup specializing in software development, offering innovative solutions and services for businesses looking to enhance their digital presence.',
-    url: '/projects/image-5.jpg',
-    tech: ['Figma', 'ReactJS', 'TailwindCSS', 'CSS'],
+    name: 'Git & GitHub',
+    desc: 'Acquired proficiency in Git and GitHub, including repository management, version control, etc. With a focus on best practices and console navigation.',
+    url: '/projects/image-03.png',
+    tech: ['GitHub'],
   },
   {
-    name: 'GreenLeafGardens.biz',
-    desc: 'An online store and community hub for gardening enthusiasts, featuring a wide range of plants, gardening tools, and expert advice.',
-    url: '/projects/image-6.jpg',
-    tech: ['ReactJS', 'TailwindCSS', 'CSS', 'FramerMotion'],
+    name: 'Text Encryptor & Decryptor Challenge',
+    desc: 'Created the Text Encryptor project, applying skills in JavaScript, HTML, CSS, Git, and GitHub, with a focus on responsiveness, functionality, and AI optimization.',
+    url: '/projects/image-04.png',
+    tech: ['HTML', 'CSS'],
   },
   {
-    name: 'PixelPerfectDesigns.info',
-    desc: 'A graphic design portfolio showcasing the work of a freelance designer, including branding, web design, and illustration projects.',
-    url: '/projects/image-7.jpg',
-    tech: ['NextJS', 'FramerMotion'],
+    name: 'Enhancing projects with AI tools',
+    desc: 'Enhancing skills in HTML integrating advanced semantics, syntax, and refactoring projects with AI tools, using Lighthouse for code optimization.',
+    url: '/projects/image-05.png',
+    tech: ['HTML', 'CSS'],
   },
   {
-    name: 'HarmonyHealthHub.com',
-    desc: 'A wellness website focused on holistic health, offering articles on nutrition, fitness, mental health, and alternative therapies.',
-    url: '/projects/image-8.jpg',
-    tech: ['NextJS', 'ReactJS', 'FramerMotion'],
+    name: 'AluraPlay',
+    desc: 'Expertise in creating responsive designs, and utilizing JavaScript for simulating APIs, and transforming static pages into dynamic applications.',
+    url: '/projects/image-06.png',
+    tech: ['HTML', 'CSS'],
   },
   {
-    name: 'StellarSkiesAstronomy.org',
-    desc: 'An educational site dedicated to astronomy, providing resources for amateur astronomers, star maps, and information on celestial events.',
-    url: '/projects/image-9.jpg',
-    tech: ['ReactJS', 'JavaScript', 'ThreeJS'],
+    name: 'Portfolio Challenge',
+    desc: 'Consolidating knowledge completing a hands-on portfolio challenge, applying skills in HTML, CSS, JavaScript, and responsive design to simulate real-world web development projects.',
+    url: '/projects/image-07.png',
+    tech: [ 'Figma', 'HTML', 'CSS', 'JavaScript'],
   },
   {
-    name: 'UrbanEatsDelights.com',
-    desc: 'A gourmet food blog sharing unique recipes, culinary tips, and reviews of local eateries and food trends.',
-    url: '/projects/image-10.jpg',
-    tech: ['NextJS', 'ThreeJS'],
+    name: 'AluraMidi',
+    desc: 'Developed skills in JavaScript, including optimizing code with for loops, handling keyboard events, dynamically managing HTML classes, and implementing conditional logic with operators',
+    url: '/projects/image-08.png',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    name: 'Fokus Pomodoro timer app',
+    desc: 'Building a Pomodoro timer app while mastering DOM manipulation, dynamic attribute and class modifications, user interaction events, and utilizing JavaScript utility objects.',
+    url: '/projects/image-09.png',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    name: 'Space Pong game',
+    desc: 'Boost development with GitHub Copilot and ChatGPT AI tools by creating player classes, implementing collision detection, enhancing game scenes with images, and adding immersive sound effects.',
+    url: '/projects/image-10.png',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    name: 'SpaceApp',
+    desc: 'JavaScript, mastering synchronous and asynchronous programming, using the NASA API with fetch, handling Promises with then, catch, and async/await, and managing API request errors effectively.',
+    url: '/projects/image-11.png',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    name: 'Best-Store (AluraGeek)',
+    desc: 'Full e-commerce application: CRUD operations, pagination, search, sort, and filter using JSON Server. React fundamentals (SPA, JSX, Components, Hooks, Props, State, Context), form validation, JWT-based authentication and role-based authorization, React Router.',
+    url: '/projects/image-12.png',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'ReactJS'],
+  },
+  {
+    name: 'Org Registration Form ',
+    desc: 'Gaining skills in creating and evolving reactive components, application prototyping, GitHub project management, dependency handling, and one-way data binding with VirtualDOM.',
+    url: '/projects/image-13.png',
+    tech: ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
+  },
+  {
+    name: 'Alura-Cinema',
+    desc: 'React project, creating components and pages, implementing dynamic and nested routes, using hooks like useState, useParams, useEffect, and useContext, consuming APIs, and deploying the project on Vercel.',
+    url: '/projects/image-15.png',
+    tech: ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
+  },
+  {
+    name: 'EasyFilm ',
+    desc: 'Movie app with React.js, featuring responsive design, user authentication, Redux, AI voice integration, dark/light mode, and third-party API integration using Async/Await and React Router 6.',
+    url: '/projects/image-21.png',
+    tech: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'Bootstrap'],
   },
 ];
 
@@ -202,6 +278,7 @@ export const projectsButton = [
   'All',
   'Figma',
   'Photoshop',
+  'Illustrator',
   'HTML',
   'CSS',
   'JavaScript',
@@ -209,7 +286,9 @@ export const projectsButton = [
   'TailwindCSS',
   'NextJS',
   'FramerMotion',
-  'ThreeJS'
+  'Vite',
+  'Bootstrap',
+  'NodeJS',
 ];
 
 // Pricing Plans data

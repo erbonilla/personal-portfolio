@@ -7,7 +7,7 @@ const Navbar = ({ id }) => {
       
       {/* Logo */}
       <a href="#home" className="text-center">
-        <span className="text-3xl font-semibold text-red-600">ER</span>
+        <span className="text-3xl font-semibold text-red-600">ED</span>
         <span className="block w-min rotate-90 origin-bottom text-[12px] font-semibold dark:text-white">Bonilla</span>
       </a>
       
