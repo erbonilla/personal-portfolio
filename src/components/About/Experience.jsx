@@ -24,7 +24,7 @@ const Experience = () => {
     >
       <Heading text={['Experience & Education']} />
       <Image 
-        src="/education.png" 
+        src="/education1.png" 
         alt="Experience Image" 
         width={400} 
         height={400} 

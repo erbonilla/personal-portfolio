@@ -19,7 +19,7 @@ const About = () => {
         
         {/* Image Section */}
         <Image
-          src="/about-me.png"
+          src="/about-me1.png"
           alt="About Image"
           width={400}
           height={400}
