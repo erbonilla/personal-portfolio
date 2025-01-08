@@ -15,11 +15,11 @@ import Toggle from "@/components/About/Toggle";
 import Load from "@/components/About/Load";
 import { useState, useRef, useEffect } from "react";
 
-
-
 export default function Home() {
   const [id, setId] = useState(0);
   const compsRef = useRef(null);
+  const showPricing = false;
+  const showQuestions = false;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -52,9 +52,9 @@ export default function Home() {
       <Skills />
       <Reviews />
       <Projects />
-      <PricingPlans />
+      {showPricing && <PricingPlans />}
       <Contact />
-      <Questions />
+      {showQuestions && <Questions />}
     </div>
     </Toggle>
     </>
