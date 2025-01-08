@@ -96,17 +96,19 @@ const [buttonHover, setButtonHover] = useState(false);
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
         className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl">
-          {heroIcons && heroIcons.map((icon, i) => (
+          {heroIcons.map((item, index) => (
             <motion.a 
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.7 }}
-              href="#" 
-              key={i} 
-              aria-label={`Social Icon ${i + 1}`}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={index}
+              aria-label={`Social Icon ${index + 1}`}
               className="rounded-lg hover:bg-red-400 hover:text-white transition-colors p-2"
             >
-              {icon}
+              {item.icon}
             </motion.a>
           ))}
         </motion.div>

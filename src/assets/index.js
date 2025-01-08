@@ -3,15 +3,27 @@ import LinkedinLineIcon from "remixicon-react/LinkedinLineIcon";
 import GithubLineIcon from "remixicon-react/GithubLineIcon";
 import FacebookCircleLineIcon from "remixicon-react/FacebookCircleLineIcon";
 import InstagramLineIcon from "remixicon-react/InstagramLineIcon";
-import DribbbleLineIcon from "remixicon-react/DribbbleLineIcon";
+//import DribbbleLineIcon from "remixicon-react/DribbbleLineIcon";
 
 // Exporting icons as an array for easy use in Hero component
 export const heroIcons = [
-  <LinkedinLineIcon />,
-  <GithubLineIcon />,
-  <FacebookCircleLineIcon />,
-  <InstagramLineIcon />,
-  <DribbbleLineIcon />,
+  {
+    icon: <LinkedinLineIcon />,
+    link: "https://www.linkedin.com/in/edgarbonillag/"
+  },
+  {
+    icon: <GithubLineIcon />,
+    link: "https://github.com/erbonilla"
+  },
+  {
+    icon: <FacebookCircleLineIcon />,
+    link: "https://www.facebook.com/oxygenozar"
+  },
+  {
+    icon: <InstagramLineIcon />,
+    link: "https://www.instagram.com/coacherbonilla/"
+  },
+  // <DribbbleLineIcon />,
 ];
 
 // Importing icons for About Me section
