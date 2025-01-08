@@ -169,13 +169,10 @@ export const experienceData = [
 
 // Skills data
 export const skillsData = [
-  
-  
   { name: 'HTML', icon: '/skills/html.png' },
   { name: 'CSS', icon: '/skills/css.png' },
-  { name: 'Tailwind', icon: '/skills/tailwind.png' },
   { name: 'JavaScript', icon: '/skills/js.png' },
-  { name: 'TypeScript', icon: '/skills/ts.png' },
+  { name: 'Tailwind', icon: '/skills/tailwind.png' },
   { name: 'React', icon: '/skills/react.png' },
   { name: 'Vite', icon: '/skills/vite.png' },
   { name: 'Next.js', icon: '/skills/nextjs.png' },
@@ -183,12 +180,13 @@ export const skillsData = [
   { name: 'Figma', icon: '/skills/figma.png' },
   { name: 'Illustrator', icon: '/skills/ai.png' },
   { name: 'Photoshop', icon: '/skills/photoshop.png' },
-  { name: 'VS Code', icon: '/skills/vscode.png' },  
   { name: 'GitHub', icon: '/skills/github.png' },
-  { name: 'Framer', icon: '/skills/framer.png' },
-  { name: 'Bootstrap', icon: '/skills/bootstrap.png' },
-  //{ name: 'Blender', icon: '/skills/blender.png' },
+  // { name: 'Framer', icon: '/skills/framer.png' },
+  // { name: 'Bootstrap', icon: '/skills/bootstrap.png' },
+  // { name: 'Blender', icon: '/skills/blender.png' },
   // { name: 'MongoDB', icon: '/skills/mongodb.png' },
+  // { name: 'TypeScript', icon: '/skills/ts.png' },
+  // { name: 'VS Code', icon: '/skills/vscode.png' },
 ];
 
 // Projects data
@@ -402,14 +400,14 @@ export const checkIcon = <CheckLineIcon />;
 
 // Q & A
 export const questions = [
-  {
+ /* {
     question: 'How much do you charge for a website?',
     answer: 'Our website packages usually range from £2997 – £4997. However, it really depends on what kind of website you need. We recently wrote a full guide on how much it costs for a website to give you an idea of the different options available.',
   },
   {
     question: 'Why are you so expensive?',
     answer: 'The process we use to build your website takes a certain amount of time and a lot of planning and research. Unlike other agencies, we DON’T use templates. We build your website from scratch, which means you get a unique design tailored around your business. Buying a website from us should not just simply be seen as a business expense as your website is a sales tool that should earn you money.',
-  },
+  },*/
   {
     question: 'How long does it take to build a website?',
     answer: 'It takes approximately 6-10 weeks to build a website from start to finish, providing we have all the information from you.',
@@ -426,14 +424,14 @@ export const questions = [
     question: 'What if I don’t like the website?',
     answer: 'You’re in luck. We offer a risk-free guarantee. Before we build your new website, we’ll design a mockup of your homepage. We’ll design a layout in Photoshop first, that way you’ll get to see our initial designs within approximately ten days. This is your opportunity to give us feedback and if you really don’t like it, you don’t have to move forward. Best part is, this won’t cost you anything.',
   },
-  {
+ /* {
     question: 'Do you offer a payment schedule?',
     answer: 'Yes, we split the payment into two. The first 60% is usually taken once you have seen the mockup of your homepage and you’re happy to move forward. The following 60% is taken 30 days after this.',
   },
   {
     question: 'Can I make the final payment when the site is ready to go live?',
     answer: 'No. In the past we have found that projects can take a lot longer than expected to complete. We might be waiting for information from you and this can delay the process. Sometimes these delays can take months. This is why we always invoice 30 days after the original payment. At this point we’ll be well on our way with your new website and you’ll be able to see the progress.',
-  },
+  },*/
   {
     question: 'Who hosts the website?',
     answer: 'If we build your website, we will generally manage the hosting for you so you don’t need to do anything. We use the same hosting company for our own website and for ALL our clients. Each website is managed individually to avoid any security issues. Every website we build has unlimited bandwidth, 20GB of disk space, 2GB Ram and 99.9% uptime. We’ve used the same company for 5 years and we don’t plan on changing this anytime soon.',
