@@ -2,27 +2,31 @@
 import { navbarData, copyRightIcon } from "@/assets/index";
 
 const Navbar = ({ id }) => {
-  // Filter out Pricing and FAQ items
   const filteredNavData = navbarData.filter(
     item => item.id !== 'pricing' && item.id !== 'questions'
   );
 
   return (
-    <div className="w-[70px] md:w-[80px] fixed left-0 top-0 h-full flex flex-col justify-between border-r border-gray-200 px-2 sm:px-4 py-6 sm:py-10 z-50 bg-white dark:bg-zinc-900">
+    <div className="w-[70px] md:w-[80px] fixed left-0 top-0 h-screen flex flex-col justify-start border-r border-gray-200 px-2 sm:px-4 py-6 sm:py-10 z-50 bg-white dark:bg-zinc-900">
       
-      {/* Logo */}
-      <a href="#home" className="text-center hidden sm:block">
-        <span className="text-2xl sm:text-3xl font-semibold text-red-600">ED</span>
-        <span className="block w-min rotate-90 origin-bottom text-[10px] sm:text-[12px] font-semibold dark:text-white">Bonilla</span>
-      </a>
-      
-      {/* Mobile Logo */}
-      <a href="#home" className="text-center sm:hidden">
-        <span className="text-xl font-semibold text-red-600">ED</span>
-      </a>
+      {/* Logo Container */}
+      <div className="relative mb-8">
+        {/* Desktop Logo */}
+        <a href="#home" className="text-center hidden sm:block">
+          <span className="text-2xl sm:text-3xl font-semibold text-red-600">ED</span>
+          <span className="absolute top-1/2 left-full transform -translate-y-1/2 -translate-x-1 text-[10px] sm:text-[12px] font-semibold whitespace-nowrap rotate-90 origin-left dark:text-white">
+            Bonilla
+          </span>
+        </a>
+        
+        {/* Mobile Logo */}
+        <a href="#home" className="text-center sm:hidden">
+          <span className="text-xl font-semibold text-red-600">ED</span>
+        </a>
+      </div>
       
       {/* Navigation Links */}
-      <div className="flex flex-col gap-y-2 sm:gap-y-3">
+      <nav className="flex flex-col gap-y-4 sm:gap-y-6 mt-4">
         {filteredNavData.map((item, index) => (
           <a 
             href={`#${item.id}`} 
@@ -43,14 +47,16 @@ const Navbar = ({ id }) => {
             </span>
           </a>
         ))}
-      </div>
+      </nav>
       
       {/* Footer */}
-      <p className="hidden sm:flex items-center justify-center text-[11px] sm:text-[13px] text-gray-500">
-        <span className="absolute left-1/2 w-max flex items-center -rotate-90 origin-bottom-left tracking-wider dark:text-gray-200">
-          {copyRightIcon} 2019 - {new Date().getFullYear()}
-        </span>
-      </p>
+      <div className="mt-auto">
+        <p className="hidden sm:flex items-center justify-center text-[11px] sm:text-[13px] text-gray-500">
+          <span className="absolute left-1/2 w-max flex items-center -rotate-90 origin-bottom-left tracking-wider dark:text-gray-200">
+            {copyRightIcon} 2019 - {new Date().getFullYear()}
+          </span>
+        </p>
+      </div>
     </div>
   );
 };
