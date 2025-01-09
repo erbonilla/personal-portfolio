@@ -34,7 +34,7 @@ const [buttonHover, setButtonHover] = useState(false);
   return (
     <div
       id="home"
-      className="h-screen grid place-items-center"
+      className="min-h-screen grid place-items-center px-4 sm:px-6 lg:px-8"
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
     >
@@ -42,11 +42,11 @@ const [buttonHover, setButtonHover] = useState(false);
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5 }}
-      className="flex flex-col items-center justify-center gap-y-3 font-light capitalize">
+      className="flex flex-col items-center justify-center gap-y-3 font-light capitalize w-full max-w-4xl mx-auto">
 
         {/* Person Image and Greeting */}
         <motion.div
-          className="flex items-center justify-center"
+          className="relative w-full flex items-center justify-center"
           style={{
             rotateX: mouseMove ? rotateX : 0,
             rotateY: mouseMove ? rotateY : 0,
@@ -59,7 +59,7 @@ const [buttonHover, setButtonHover] = useState(false);
             width={400}
             height={400}
             priority={true}
-            className="h-auto w-[150px]"
+            className="h-auto w-[120px] sm:w-[150px] md:w-[180px]"
           />
           <motion.span 
           className="absolute text-3xl font-semibold text-white top-10"
@@ -75,10 +75,12 @@ const [buttonHover, setButtonHover] = useState(false);
         </motion.div>
         
         {/* Title and Subtitle */}
-        <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl dark:text-white transition-colors">
+        <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold tracking-wider text-gray-500 dark:text-white transition-colors">
           Hi, my name is ED Bonilla &
         </h1>
-        <p className="text-lg tracking-wider text-gray-700 dark:text-gray-200 transition-colors">UX/UI Designer | Front-End Developer </p>
+        <p className="text-base sm:text-lg tracking-wider text-center text-gray-700 dark:text-gray-200 transition-colors">
+          UX/UI Designer | Front-End Developer 
+        </p>
         
         {/* "Talk to me" Button */}
         <a
@@ -92,10 +94,8 @@ const [buttonHover, setButtonHover] = useState(false);
 
         {/* Social Icons */}
         <motion.div 
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
-        className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl">
+          className="mt-8 flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-2xl sm:text-3xl text-yellow-600"
+        >
           {heroIcons.map((item, index) => (
             <motion.a 
             initial={{ opacity: 0, y: -30 }}

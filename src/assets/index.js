@@ -32,28 +32,29 @@ import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
 import GroupLineIcon from "remixicon-react/GroupLineIcon";
 import AwardFillIcon from "remixicon-react/AwardFillIcon";
 
+
 // Exporting icons with additional data for About Me section
 export const aboutData = [
   {
     title: "Github Repos",
-    amount: 18,
+    amount: 33,
     icon: <GithubFillIcon />,
   },
   {
     title: "Successful Projects",
-    amount: 3,
+    amount: 11,
     icon: <Projector2LineIcon />,
   },
- /* {
+  {
     title: "Team Members",
-    amount: 15,
+    amount: 3,
     icon: <GroupLineIcon />,
-  },*/
-  /*{
+  },
+  {
     title: "Awards Won",
-    amount: 12,
+    amount: 5,
     icon: <AwardFillIcon />,
-  },*/
+  },
 ];
 
 // Additional icons for other components
@@ -280,6 +281,13 @@ export const projectsData = [
     desc: 'Movie app with React.js, featuring responsive design, user authentication, Redux, AI voice integration, dark/light mode, and third-party API integration using Async/Await and React Router 6.',
     url: '/projects/image-21.png',
     tech: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'Bootstrap'],
+  },
+
+  {
+    name: 'Personal Portfolio ',
+    desc: 'Movie app with React.js, featuring responsive design, user authentication, Redux, AI voice integration, dark/light mode, and third-party API integration using Async/Await and React Router 6.',
+    url: '/projects/image-21.png',
+    tech: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'TailwindCSS', 'NextJS'],
   },
 ];
 

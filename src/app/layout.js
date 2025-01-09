@@ -13,13 +13,16 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "UX/UI Designer & Frontend Developer",
-  description: "Portfolio of a UX/UI Designer & Frontend Developer",
-};
+  title: 'ED Bonilla Portfolio',
+  description: 'UX/UI Designer & Front-End Developer Portfolio',
+}
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

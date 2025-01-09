@@ -45,7 +45,7 @@ export default function Home() {
     <Load />
     <Toggle>
     <Navbar id={id} />
-    <div className="w-min" ref={compsRef}>
+    <div className="w-full min-h-screen pl-[70px] sm:pl-[80px]" ref={compsRef}>
       <Hero />
       <About />
       <Experience />
